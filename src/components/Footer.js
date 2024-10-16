@@ -6,6 +6,10 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { SiCodeforces } from "react-icons/si";
+import { SiCodechef } from "react-icons/si";
+import { SiLeetcode } from "react-icons/si";
+import { SiGeeksforgeeks } from "react-icons/si";
 
 function Footer() {
   let date = new Date();
@@ -53,12 +57,52 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.instagram.com/tulsi0308/"
+                href="https://www.instagram.com/_avinash__agrawal_/"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
                 <AiFillInstagram />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://codeforces.com/profile/Avi0308"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <SiCodeforces />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://www.codechef.com/users/avi0308"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <SiCodechef />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://leetcode.com/u/Avinash_Agrawal/"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <SiLeetcode />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://auth.geeksforgeeks.org/user/avinash004k9"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <SiGeeksforgeeks />
               </a>
             </li>
           </ul>

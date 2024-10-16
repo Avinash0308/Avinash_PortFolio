@@ -2,9 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import Coke from "../../Assets/Projects/Coke&Code.png";
 import MediStop from "../../Assets/Projects/MediStop.png";
-import NetFlix from "../../Assets/Projects/NetFlix.png";
+import Genius from "../../Assets/Projects/Genius.png";
+import Analyzer from "../../Assets/Projects/analyzer.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -19,36 +19,40 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={Genius}
+              isBlog={false}
+              title="Genius.AI - Saas Platform"
+              description="• Built a SaaS (Software as a Service) platform featuring five AI tools that generate images, videos, music, code and facilitate general conversation.
+              • Integrated Gemini API for code generation & conversation and Replicate’s models to create various types of media
+              • Implemented user authentication with Clerk, integrated Stripe for payment processing, and managed the MySQL database using Prisma ORM."
+              ghLink="https://github.com/Avinash0308/AviX"
+              demoLink="https://youtu.be/oM1PlYCPZS8"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Analyzer}
+              isBlog={false}
+              title="YouTube Analyzer - Chrome Extension"
+              description="• Developed a Chrome Extension that empowers users to instantly analyse, summarize, and resolve queries related to YouTube videos with a single click;
+              • Leveraged the Transformer’s mT5 Multilingual XLSum Model to analyse video using its Transcript.
+              • Integrated Gemini API to resolve user queries related to YouTube Video using summarized text."
+              ghLink="https://github.com/Avinash0308/Youtube-Analyzer"
+              demoLink="https://youtu.be/SPqJzIG7zQA"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={MediStop}
               isBlog={false}
-              title="MediStop"
-              description="MediStop is a one stop solution for all your medical needs. It is a health-tech tool which brings the whole medical world in your handset. It have a Diet Planner, Doctor Appointment System, Personal Space, and many more."
-              ghLink="https://github.com/Avinash0308/MediStop-One_Stop_For_All_MediNeeds"
-              demoLink="https://medistoprender.onrender.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={Coke}
-              isBlog={false}
-              title="Coke&Code"
-              description="Code, Compete, Win. Build cool and crazy projects, compete with geeky minds as you, win a coke and more. The webiste basically focuses on organizing various coding contests and make you feel the real coding environment."
-              ghLink="https://github.com/Avinash0308/Coke-Code"
-              demoLink="https://cokecode.netlify.app/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={NetFlix}
-              isBlog={false}
-              title="NetFlix Clone"
-              description="Netflix Clone is an attempt to clone the Netflix Website, where the user can 
-              • Create an account using the email and can login on website.
-              • Watch trailers and promos of the TV shows, web series, movies, etc"
-              ghLink="https://github.com/Avinash0308/NetFlix_Clone"
-              demoLink = "https://avinet.netlify.app/"
+              title="MediStop - Full Stack Website"
+              description="• Created MediStop, a health tech web app enabling users to securely store medical data, book doctor appointments, and access a curated list of health schemes from various organizations.
+              • Integrated MongoDB as the database to authenticate user information & securely store medical data.
+              • Built the backend using Node.js and developed the frontend with HTML, CSS, and JavaScript."
+              ghLink="https://github.com/Avinash0308/MediStop_One_Stop_For_All_Medineed"
+              demoLink="https://tumin-the-two-minute-app.onrender.com/"
             />
           </Col>
         </Row>
